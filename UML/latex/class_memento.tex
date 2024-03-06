@@ -1,0 +1,53 @@
+\doxysection{Memento Class Reference}
+\hypertarget{class_memento}{}\label{class_memento}\index{Memento@{Memento}}
+
+
+Inheritance diagram for Memento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_memento__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \mbox{\hyperlink{class_memento_a3997cb0d0740f1c263a4daf9adc9c936}{Get\+Name}} () const =0
+\item 
+\Hypertarget{class_memento_aeb9a9dce4aaf28f5730d74d01a2b0f8f}\label{class_memento_aeb9a9dce4aaf28f5730d74d01a2b0f8f} 
+virtual std\+::string {\bfseries date} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_memento_a861e46d663f676b93f18fc235abd95f6}{state}} () const =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_memento}{Memento} interface provides a way to retrieve the memento\textquotesingle{}s metadata, such as creation date or name. However, it doesn\textquotesingle{}t expose the \doxylink{class_originator}{Originator}\textquotesingle{}s state. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_memento_a3997cb0d0740f1c263a4daf9adc9c936}\label{class_memento_a3997cb0d0740f1c263a4daf9adc9c936} 
+\index{Memento@{Memento}!GetName@{GetName}}
+\index{GetName@{GetName}!Memento@{Memento}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily virtual std\+::string Memento\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_concrete_memento_ae1379f7af6c69b958ea13f0b508eb44a}{Concrete\+Memento}}.
+
+\Hypertarget{class_memento_a861e46d663f676b93f18fc235abd95f6}\label{class_memento_a861e46d663f676b93f18fc235abd95f6} 
+\index{Memento@{Memento}!state@{state}}
+\index{state@{state}!Memento@{Memento}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily virtual std\+::string Memento\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_concrete_memento_aef47044f87b264bcd2931245545945c3}{Concrete\+Memento}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Behavioral\+\_\+\+Patterns/memento/main.\+cc\end{DoxyCompactItemize}

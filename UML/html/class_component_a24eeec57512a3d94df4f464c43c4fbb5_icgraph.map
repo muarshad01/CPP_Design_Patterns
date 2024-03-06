@@ -1,0 +1,9 @@
+<map id="Component::Operation" name="Component::Operation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="381,47,532,73"/>
+<area shape="rect" id="Node000002" href="$class_decorator.html#a0c833e6b554c0cc86542347ba5827121" title=" " alt="" coords="192,47,333,73"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="366,63,333,63,333,57,366,57"/>
+<area shape="rect" id="Node000003" href="$class_concrete_decorator_a.html#a02dd11c258e7877f10620c8a2a4753b5" title=" " alt="" coords="5,5,144,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="176,47,143,42,144,36,177,42"/>
+<area shape="rect" id="Node000004" href="$class_concrete_decorator_b.html#a0ae2ed203aea7ed7878e2d475b6bd021" title=" " alt="" coords="5,72,144,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="177,78,144,84,143,78,176,73"/>
+</map>

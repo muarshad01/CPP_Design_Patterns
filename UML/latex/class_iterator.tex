@@ -1,0 +1,38 @@
+\doxysection{Iterator\texorpdfstring{$<$}{<} T, U \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_iterator}{}\label{class_iterator}\index{Iterator$<$ T, U $>$@{Iterator$<$ T, U $>$}}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_iterator_a87f7f2e2f155be4b4bb44297b4e5a279}\label{class_iterator_a87f7f2e2f155be4b4bb44297b4e5a279} 
+typedef std\+::vector$<$ T $>$\+::iterator {\bfseries iter\+\_\+type}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_iterator_a239e5223eebd9728e2406c28e66cc46a}\label{class_iterator_a239e5223eebd9728e2406c28e66cc46a} 
+{\bfseries Iterator} (U \texorpdfstring{$\ast$}{*}p\+\_\+data, bool reverse=false)
+\item 
+\Hypertarget{class_iterator_a3d4d67f362c1290616acebaf0d919d05}\label{class_iterator_a3d4d67f362c1290616acebaf0d919d05} 
+void {\bfseries First} ()
+\item 
+\Hypertarget{class_iterator_adc8e3fc9596883617a572306cc156f8a}\label{class_iterator_adc8e3fc9596883617a572306cc156f8a} 
+void {\bfseries Next} ()
+\item 
+\Hypertarget{class_iterator_a61f1fc1d55461d6019a5b2ad6869a42b}\label{class_iterator_a61f1fc1d55461d6019a5b2ad6869a42b} 
+bool {\bfseries Is\+Done} ()
+\item 
+\Hypertarget{class_iterator_a0b6c492c28ab77433afbd0ec98e914a1}\label{class_iterator_a0b6c492c28ab77433afbd0ec98e914a1} 
+iter\+\_\+type {\bfseries Current} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T, typename U$>$\newline
+class Iterator$<$ T, U $>$}
+\doxylink{class_iterator}{Iterator} Design Pattern
+
+Intent\+: Lets you traverse elements of a collection without exposing its underlying representation (list, stack, tree, etc.). C++ has its own implementation of iterator that works with a different generics containers defined by the standard library. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Behavioral\+\_\+\+Patterns/iterator/main.\+cc\end{DoxyCompactItemize}

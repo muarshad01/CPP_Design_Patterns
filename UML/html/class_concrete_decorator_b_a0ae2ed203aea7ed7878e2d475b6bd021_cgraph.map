@@ -1,0 +1,7 @@
+<map id="ConcreteDecoratorB::Operation" name="ConcreteDecoratorB::Operation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,144,48"/>
+<area shape="rect" id="Node000002" href="$class_decorator.html#a0c833e6b554c0cc86542347ba5827121" title=" " alt="" coords="192,13,333,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,24,176,24,176,29,144,29"/>
+<area shape="rect" id="Node000003" href="$class_component.html#a24eeec57512a3d94df4f464c43c4fbb5" title=" " alt="" coords="381,13,532,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="333,24,366,24,366,29,333,29"/>
+</map>

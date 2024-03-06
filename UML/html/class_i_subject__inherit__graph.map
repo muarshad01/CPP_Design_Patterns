@@ -1,0 +1,9 @@
+<map id="ISubject" name="ISubject">
+<area shape="rect" id="Node000001" title=" " alt="" coords="47,5,115,32"/>
+<area shape="rect" id="Node000002" href="$class_subject.html" title=" " alt="" coords="48,80,114,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,48,84,80,78,80,78,48"/>
+<area shape="rect" id="Node000003" href="$class_proxy.html" title=" " alt="" coords="5,155,61,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="66,121,43,156,39,153,62,118"/>
+<area shape="rect" id="Node000004" href="$class_real_subject.html" title=" " alt="" coords="85,155,176,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="100,118,124,153,120,156,96,121"/>
+</map>

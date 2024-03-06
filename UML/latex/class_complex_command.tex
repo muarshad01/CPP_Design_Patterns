@@ -1,0 +1,59 @@
+\doxysection{Complex\+Command Class Reference}
+\hypertarget{class_complex_command}{}\label{class_complex_command}\index{ComplexCommand@{ComplexCommand}}
+
+
+Inheritance diagram for Complex\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_complex_command__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Complex\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{class_complex_command__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_complex_command_a54d9c41a8e51b5b85749335b90d039f7}{Complex\+Command}} (\mbox{\hyperlink{class_receiver}{Receiver}} \texorpdfstring{$\ast$}{*}receiver, std\+::string a, std\+::string b)
+\item 
+void \mbox{\hyperlink{class_complex_command_a9dc000d13b2b347ad8baebe1d20623df}{Execute}} () const override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+However, some commands can delegate more complex operations to other objects, called "{}receivers."{} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_complex_command_a54d9c41a8e51b5b85749335b90d039f7}\label{class_complex_command_a54d9c41a8e51b5b85749335b90d039f7} 
+\index{ComplexCommand@{ComplexCommand}!ComplexCommand@{ComplexCommand}}
+\index{ComplexCommand@{ComplexCommand}!ComplexCommand@{ComplexCommand}}
+\doxysubsubsection{\texorpdfstring{ComplexCommand()}{ComplexCommand()}}
+{\footnotesize\ttfamily Complex\+Command\+::\+Complex\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_receiver}{Receiver}} \texorpdfstring{$\ast$}{*}}]{receiver,  }\item[{std\+::string}]{a,  }\item[{std\+::string}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Complex commands can accept one or several receiver objects along with any context data via the constructor. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_complex_command_a9dc000d13b2b347ad8baebe1d20623df}\label{class_complex_command_a9dc000d13b2b347ad8baebe1d20623df} 
+\index{ComplexCommand@{ComplexCommand}!Execute@{Execute}}
+\index{Execute@{Execute}!ComplexCommand@{ComplexCommand}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Complex\+Command\+::\+Execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Commands can delegate to any methods of a receiver. 
+
+Implements \mbox{\hyperlink{class_command}{Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Behavioral\+\_\+\+Patterns/command/main.\+cc\end{DoxyCompactItemize}

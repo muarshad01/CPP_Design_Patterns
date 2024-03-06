@@ -1,0 +1,25 @@
+\doxysection{Flyweight Class Reference}
+\hypertarget{class_flyweight}{}\label{class_flyweight}\index{Flyweight@{Flyweight}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_flyweight_a9f390a965498fdb12e1a73eaf90980e7}\label{class_flyweight_a9f390a965498fdb12e1a73eaf90980e7} 
+{\bfseries Flyweight} (const \mbox{\hyperlink{struct_shared_state}{Shared\+State}} \texorpdfstring{$\ast$}{*}shared\+\_\+state)
+\item 
+\Hypertarget{class_flyweight_ab0b4b80a2a394b46ec82d49b5bf336fb}\label{class_flyweight_ab0b4b80a2a394b46ec82d49b5bf336fb} 
+{\bfseries Flyweight} (const \mbox{\hyperlink{class_flyweight}{Flyweight}} \&other)
+\item 
+\Hypertarget{class_flyweight_af639c5caac408adbb2774b7f297e84be}\label{class_flyweight_af639c5caac408adbb2774b7f297e84be} 
+\mbox{\hyperlink{struct_shared_state}{Shared\+State}} \texorpdfstring{$\ast$}{*} {\bfseries shared\+\_\+state} () const
+\item 
+\Hypertarget{class_flyweight_acead13f77a245942e06d0532087b2e9b}\label{class_flyweight_acead13f77a245942e06d0532087b2e9b} 
+void {\bfseries Operation} (const \mbox{\hyperlink{struct_unique_state}{Unique\+State}} \&unique\+\_\+state) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_flyweight}{Flyweight} stores a common portion of the state (also called intrinsic state) that belongs to multiple real business entities. The \doxylink{class_flyweight}{Flyweight} accepts the rest of the state (extrinsic state, unique for each entity) via its method parameters. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Structural\+\_\+\+Patterns/flyweight/main.\+cc\end{DoxyCompactItemize}

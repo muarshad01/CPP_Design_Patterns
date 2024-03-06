@@ -1,0 +1,115 @@
+\doxysection{Abstract\+Class Class Reference}
+\hypertarget{class_abstract_class}{}\label{class_abstract_class}\index{AbstractClass@{AbstractClass}}
+
+
+Inheritance diagram for Abstract\+Class\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{class_abstract_class__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_abstract_class_a30646b37f52a789de69a2aa9bc62d883}{Template\+Method}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_abstract_class_aced099eb6844cb6fd65138e3d6343776}{Base\+Operation1}} () const
+\item 
+\Hypertarget{class_abstract_class_a6e4c6a073878e6657e57f86477ed98c7}\label{class_abstract_class_a6e4c6a073878e6657e57f86477ed98c7} 
+void {\bfseries Base\+Operation2} () const
+\item 
+\Hypertarget{class_abstract_class_a6519a4f0bac1e40d78251f22caef4f98}\label{class_abstract_class_a6519a4f0bac1e40d78251f22caef4f98} 
+void {\bfseries Base\+Operation3} () const
+\item 
+virtual void \mbox{\hyperlink{class_abstract_class_a4765c9c9793b4077ffe34bf3b4127c98}{Required\+Operations1}} () const =0
+\item 
+\Hypertarget{class_abstract_class_a91e297217f21c7db4c03c6fbc06cc514}\label{class_abstract_class_a91e297217f21c7db4c03c6fbc06cc514} 
+virtual void {\bfseries Required\+Operation2} () const =0
+\item 
+virtual void \mbox{\hyperlink{class_abstract_class_abf7e9570e26b010b5d772bac8e086ac7}{Hook1}} () const
+\item 
+\Hypertarget{class_abstract_class_ac1293afd8d8a01c732e662d93e585f15}\label{class_abstract_class_ac1293afd8d8a01c732e662d93e585f15} 
+virtual void {\bfseries Hook2} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Abstract Class defines a template method that contains a skeleton of some algorithm, composed of calls to (usually) abstract primitive operations.
+
+Concrete subclasses should implement these operations, but leave the template method itself intact. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_abstract_class_aced099eb6844cb6fd65138e3d6343776}\label{class_abstract_class_aced099eb6844cb6fd65138e3d6343776} 
+\index{AbstractClass@{AbstractClass}!BaseOperation1@{BaseOperation1}}
+\index{BaseOperation1@{BaseOperation1}!AbstractClass@{AbstractClass}}
+\doxysubsubsection{\texorpdfstring{BaseOperation1()}{BaseOperation1()}}
+{\footnotesize\ttfamily void Abstract\+Class\+::\+Base\+Operation1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+These operations already have implementations. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_class_aced099eb6844cb6fd65138e3d6343776_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_abstract_class_abf7e9570e26b010b5d772bac8e086ac7}\label{class_abstract_class_abf7e9570e26b010b5d772bac8e086ac7} 
+\index{AbstractClass@{AbstractClass}!Hook1@{Hook1}}
+\index{Hook1@{Hook1}!AbstractClass@{AbstractClass}}
+\doxysubsubsection{\texorpdfstring{Hook1()}{Hook1()}}
+{\footnotesize\ttfamily virtual void Abstract\+Class\+::\+Hook1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+These are "{}hooks."{} Subclasses may override them, but it\textquotesingle{}s not mandatory since the hooks already have default (but empty) implementation. Hooks provide additional extension points in some crucial places of the algorithm. 
+
+Reimplemented in \mbox{\hyperlink{class_concrete_class2_a10322db169efc32df2a4d20b4c936b60}{Concrete\+Class2}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_class_abf7e9570e26b010b5d772bac8e086ac7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_abstract_class_a4765c9c9793b4077ffe34bf3b4127c98}\label{class_abstract_class_a4765c9c9793b4077ffe34bf3b4127c98} 
+\index{AbstractClass@{AbstractClass}!RequiredOperations1@{RequiredOperations1}}
+\index{RequiredOperations1@{RequiredOperations1}!AbstractClass@{AbstractClass}}
+\doxysubsubsection{\texorpdfstring{RequiredOperations1()}{RequiredOperations1()}}
+{\footnotesize\ttfamily virtual void Abstract\+Class\+::\+Required\+Operations1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+These operations have to be implemented in subclasses. 
+
+Implemented in \mbox{\hyperlink{class_concrete_class1_a7e57a80cdc074bea35eb3a6fee9f99b9}{Concrete\+Class1}}, and \mbox{\hyperlink{class_concrete_class2_a8521bef7d5b2c126734ac9a701838f08}{Concrete\+Class2}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_class_a4765c9c9793b4077ffe34bf3b4127c98_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_abstract_class_a30646b37f52a789de69a2aa9bc62d883}\label{class_abstract_class_a30646b37f52a789de69a2aa9bc62d883} 
+\index{AbstractClass@{AbstractClass}!TemplateMethod@{TemplateMethod}}
+\index{TemplateMethod@{TemplateMethod}!AbstractClass@{AbstractClass}}
+\doxysubsubsection{\texorpdfstring{TemplateMethod()}{TemplateMethod()}}
+{\footnotesize\ttfamily void Abstract\+Class\+::\+Template\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+The template method defines the skeleton of an algorithm. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_abstract_class_a30646b37f52a789de69a2aa9bc62d883_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Behavioral\+\_\+\+Patterns/template\+\_\+method/main.\+cc\end{DoxyCompactItemize}

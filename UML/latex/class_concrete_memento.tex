@@ -1,0 +1,75 @@
+\doxysection{Concrete\+Memento Class Reference}
+\hypertarget{class_concrete_memento}{}\label{class_concrete_memento}\index{ConcreteMemento@{ConcreteMemento}}
+
+
+Inheritance diagram for Concrete\+Memento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_concrete_memento__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Concrete\+Memento\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_concrete_memento__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_concrete_memento_a1b2f0bd925fa8523df97d3adc07b1219}\label{class_concrete_memento_a1b2f0bd925fa8523df97d3adc07b1219} 
+{\bfseries Concrete\+Memento} (std\+::string \mbox{\hyperlink{class_concrete_memento_aef47044f87b264bcd2931245545945c3}{state}})
+\item 
+std\+::string \mbox{\hyperlink{class_concrete_memento_aef47044f87b264bcd2931245545945c3}{state}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_concrete_memento_ae1379f7af6c69b958ea13f0b508eb44a}{Get\+Name}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_concrete_memento_a9776d6cda65706a12d7f9a607379f91a}{date}} () const override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Concrete \doxylink{class_memento}{Memento} contains the infrastructure for storing the \doxylink{class_originator}{Originator}\textquotesingle{}s state. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concrete_memento_a9776d6cda65706a12d7f9a607379f91a}\label{class_concrete_memento_a9776d6cda65706a12d7f9a607379f91a} 
+\index{ConcreteMemento@{ConcreteMemento}!date@{date}}
+\index{date@{date}!ConcreteMemento@{ConcreteMemento}}
+\doxysubsubsection{\texorpdfstring{date()}{date()}}
+{\footnotesize\ttfamily std\+::string Concrete\+Memento\+::date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_memento}{Memento}}.
+
+\Hypertarget{class_concrete_memento_ae1379f7af6c69b958ea13f0b508eb44a}\label{class_concrete_memento_ae1379f7af6c69b958ea13f0b508eb44a} 
+\index{ConcreteMemento@{ConcreteMemento}!GetName@{GetName}}
+\index{GetName@{GetName}!ConcreteMemento@{ConcreteMemento}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Concrete\+Memento\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The rest of the methods are used by the \doxylink{class_caretaker}{Caretaker} to display metadata. 
+
+Implements \mbox{\hyperlink{class_memento}{Memento}}.
+
+\Hypertarget{class_concrete_memento_aef47044f87b264bcd2931245545945c3}\label{class_concrete_memento_aef47044f87b264bcd2931245545945c3} 
+\index{ConcreteMemento@{ConcreteMemento}!state@{state}}
+\index{state@{state}!ConcreteMemento@{ConcreteMemento}}
+\doxysubsubsection{\texorpdfstring{state()}{state()}}
+{\footnotesize\ttfamily std\+::string Concrete\+Memento\+::state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The \doxylink{class_originator}{Originator} uses this method when restoring its state. 
+
+Implements \mbox{\hyperlink{class_memento}{Memento}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Behavioral\+\_\+\+Patterns/memento/main.\+cc\end{DoxyCompactItemize}

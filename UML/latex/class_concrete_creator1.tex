@@ -1,0 +1,55 @@
+\doxysection{Concrete\+Creator1 Class Reference}
+\hypertarget{class_concrete_creator1}{}\label{class_concrete_creator1}\index{ConcreteCreator1@{ConcreteCreator1}}
+
+
+Inheritance diagram for Concrete\+Creator1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_concrete_creator1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Concrete\+Creator1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_concrete_creator1__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_product}{Product}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_concrete_creator1_a6bef1b560ae563eba3c095041b92a422}{Factory\+Method}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_creator}{Creator}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_creator_a2fe5ac9bd6c9852ab6b92bc7b80c3fef}{\texorpdfstring{$\sim$}{\string~}\+Creator}} ()
+\item 
+std\+::string \mbox{\hyperlink{class_creator_a588e04ad501855570b655d1bf7235d58}{Some\+Operation}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete Creators override the factory method in order to change the resulting product\textquotesingle{}s type. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concrete_creator1_a6bef1b560ae563eba3c095041b92a422}\label{class_concrete_creator1_a6bef1b560ae563eba3c095041b92a422} 
+\index{ConcreteCreator1@{ConcreteCreator1}!FactoryMethod@{FactoryMethod}}
+\index{FactoryMethod@{FactoryMethod}!ConcreteCreator1@{ConcreteCreator1}}
+\doxysubsubsection{\texorpdfstring{FactoryMethod()}{FactoryMethod()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_product}{Product}} \texorpdfstring{$\ast$}{*} Concrete\+Creator1\+::\+Factory\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Note that the signature of the method still uses the abstract product type, even though the concrete product is actually returned from the method. This way the \doxylink{class_creator}{Creator} can stay independent of concrete product classes. 
+
+Implements \mbox{\hyperlink{class_creator}{Creator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Creational\+\_\+\+Patterns/factory\+\_\+method/main.\+cc\end{DoxyCompactItemize}

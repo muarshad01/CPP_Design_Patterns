@@ -1,0 +1,54 @@
+\doxysection{Abstract\+ProductB Class Reference}
+\hypertarget{class_abstract_product_b}{}\label{class_abstract_product_b}\index{AbstractProductB@{AbstractProductB}}
+
+
+Inheritance diagram for Abstract\+ProductB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_abstract_product_b__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_abstract_product_b_adebb187459ce05dbf2c7f6d088dfcc1e}{\texorpdfstring{$\sim$}{\string~}\+Abstract\+ProductB}} ()
+\item 
+\Hypertarget{class_abstract_product_b_acaddabb8c560d242d6fe9c180a507c87}\label{class_abstract_product_b_acaddabb8c560d242d6fe9c180a507c87} 
+virtual std\+::string {\bfseries Useful\+FunctionB} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_abstract_product_b_a23c91713167f41c5399ed2cdac1887e6}{Another\+Useful\+FunctionB}} (const \mbox{\hyperlink{class_abstract_product_a}{Abstract\+ProductA}} \&collaborator) const =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Here\textquotesingle{}s the the base interface of another product. All products can interact with each other, but proper interaction is possible only between products of the same concrete variant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_abstract_product_b_adebb187459ce05dbf2c7f6d088dfcc1e}\label{class_abstract_product_b_adebb187459ce05dbf2c7f6d088dfcc1e} 
+\index{AbstractProductB@{AbstractProductB}!````~AbstractProductB@{\texorpdfstring{$\sim$}{\string~}AbstractProductB}}
+\index{````~AbstractProductB@{\texorpdfstring{$\sim$}{\string~}AbstractProductB}!AbstractProductB@{AbstractProductB}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AbstractProductB()}{\string~AbstractProductB()}}
+{\footnotesize\ttfamily virtual Abstract\+Product\+B\+::\texorpdfstring{$\sim$}{\string~}\+Abstract\+ProductB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\doxylink{class_product}{Product} B is able to do its own thing... 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_abstract_product_b_a23c91713167f41c5399ed2cdac1887e6}\label{class_abstract_product_b_a23c91713167f41c5399ed2cdac1887e6} 
+\index{AbstractProductB@{AbstractProductB}!AnotherUsefulFunctionB@{AnotherUsefulFunctionB}}
+\index{AnotherUsefulFunctionB@{AnotherUsefulFunctionB}!AbstractProductB@{AbstractProductB}}
+\doxysubsubsection{\texorpdfstring{AnotherUsefulFunctionB()}{AnotherUsefulFunctionB()}}
+{\footnotesize\ttfamily virtual std\+::string Abstract\+Product\+B\+::\+Another\+Useful\+FunctionB (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_abstract_product_a}{Abstract\+ProductA}} \&}]{collaborator }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+...but it also can collaborate with the ProductA.
+
+The Abstract Factory makes sure that all products it creates are of the same variant and thus, compatible. 
+
+Implemented in \mbox{\hyperlink{class_concrete_product_b1_ab385f7483724c8c172feac93c76df61a}{Concrete\+Product\+B1}}, and \mbox{\hyperlink{class_concrete_product_b2_a0848946d8982adcc36ed371de3618295}{Concrete\+Product\+B2}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Creational\+\_\+\+Patterns/abstract\+\_\+factory/main.\+cc\end{DoxyCompactItemize}

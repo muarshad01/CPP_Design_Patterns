@@ -1,0 +1,30 @@
+\doxysection{Flyweight\+Factory Class Reference}
+\hypertarget{class_flyweight_factory}{}\label{class_flyweight_factory}\index{FlyweightFactory@{FlyweightFactory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_flyweight_factory_a42edd1950d034ffb758817827d8f36c3}\label{class_flyweight_factory_a42edd1950d034ffb758817827d8f36c3} 
+{\bfseries Flyweight\+Factory} (std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{struct_shared_state}{Shared\+State}} $>$ share\+\_\+states)
+\item 
+\mbox{\hyperlink{class_flyweight}{Flyweight}} \mbox{\hyperlink{class_flyweight_factory_aec0c8ce8ea0a89cae8663e24087c30a4}{Get\+Flyweight}} (const \mbox{\hyperlink{struct_shared_state}{Shared\+State}} \&shared\+\_\+state)
+\item 
+\Hypertarget{class_flyweight_factory_a393569e2ef9fd673429abb2aa610b038}\label{class_flyweight_factory_a393569e2ef9fd673429abb2aa610b038} 
+void {\bfseries List\+Flyweights} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_flyweight}{Flyweight} Factory creates and manages the \doxylink{class_flyweight}{Flyweight} objects. It ensures that flyweights are shared correctly. When the client requests a flyweight, the factory either returns an existing instance or creates a new one, if it doesn\textquotesingle{}t exist yet. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_flyweight_factory_aec0c8ce8ea0a89cae8663e24087c30a4}\label{class_flyweight_factory_aec0c8ce8ea0a89cae8663e24087c30a4} 
+\index{FlyweightFactory@{FlyweightFactory}!GetFlyweight@{GetFlyweight}}
+\index{GetFlyweight@{GetFlyweight}!FlyweightFactory@{FlyweightFactory}}
+\doxysubsubsection{\texorpdfstring{GetFlyweight()}{GetFlyweight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_flyweight}{Flyweight}} Flyweight\+Factory\+::\+Get\+Flyweight (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_shared_state}{Shared\+State}} \&}]{shared\+\_\+state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns an existing \doxylink{class_flyweight}{Flyweight} with a given state or creates a new one. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Structural\+\_\+\+Patterns/flyweight/main.\+cc\end{DoxyCompactItemize}

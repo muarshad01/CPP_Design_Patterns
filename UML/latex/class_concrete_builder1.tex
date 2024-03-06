@@ -1,0 +1,96 @@
+\doxysection{Concrete\+Builder1 Class Reference}
+\hypertarget{class_concrete_builder1}{}\label{class_concrete_builder1}\index{ConcreteBuilder1@{ConcreteBuilder1}}
+
+
+Inheritance diagram for Concrete\+Builder1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{class_concrete_builder1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Concrete\+Builder1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{class_concrete_builder1__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_concrete_builder1_ad2cabce5c1061212f5afd0f463a74c38}{Concrete\+Builder1}} ()
+\item 
+\Hypertarget{class_concrete_builder1_a08c909f6854da26ad0b151730e16bcd7}\label{class_concrete_builder1_a08c909f6854da26ad0b151730e16bcd7} 
+void {\bfseries Reset} ()
+\item 
+void \mbox{\hyperlink{class_concrete_builder1_a821595a25c1445c931a07cf0e750b1f8}{Produce\+PartA}} () const override
+\item 
+void \mbox{\hyperlink{class_concrete_builder1_a8cf75e0d2054b8f55d8318675dc00440}{Produce\+PartB}} () const override
+\item 
+void \mbox{\hyperlink{class_concrete_builder1_aa7184aadd59a222415344f8d4f20d657}{Produce\+PartC}} () const override
+\item 
+\mbox{\hyperlink{class_product1}{Product1}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_concrete_builder1_a81bfb833059d8d8080e616b94ad6befc}{Get\+Product}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Concrete \doxylink{class_builder}{Builder} classes follow the \doxylink{class_builder}{Builder} interface and provide specific implementations of the building steps. Your program may have several variations of Builders, implemented differently. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_concrete_builder1_ad2cabce5c1061212f5afd0f463a74c38}\label{class_concrete_builder1_ad2cabce5c1061212f5afd0f463a74c38} 
+\index{ConcreteBuilder1@{ConcreteBuilder1}!ConcreteBuilder1@{ConcreteBuilder1}}
+\index{ConcreteBuilder1@{ConcreteBuilder1}!ConcreteBuilder1@{ConcreteBuilder1}}
+\doxysubsubsection{\texorpdfstring{ConcreteBuilder1()}{ConcreteBuilder1()}}
+{\footnotesize\ttfamily Concrete\+Builder1\+::\+Concrete\+Builder1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+A fresh builder instance should contain a blank product object, which is used in further assembly. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concrete_builder1_a81bfb833059d8d8080e616b94ad6befc}\label{class_concrete_builder1_a81bfb833059d8d8080e616b94ad6befc} 
+\index{ConcreteBuilder1@{ConcreteBuilder1}!GetProduct@{GetProduct}}
+\index{GetProduct@{GetProduct}!ConcreteBuilder1@{ConcreteBuilder1}}
+\doxysubsubsection{\texorpdfstring{GetProduct()}{GetProduct()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_product1}{Product1}} \texorpdfstring{$\ast$}{*} Concrete\+Builder1\+::\+Get\+Product (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Concrete Builders are supposed to provide their own methods for retrieving results. That\textquotesingle{}s because various types of builders may create entirely different products that don\textquotesingle{}t follow the same interface. Therefore, such methods cannot be declared in the base \doxylink{class_builder}{Builder} interface (at least in a statically typed programming language). Note that PHP is a dynamically typed language and this method CAN be in the base interface. However, we won\textquotesingle{}t declare it there for the sake of clarity.
+
+Usually, after returning the end result to the client, a builder instance is expected to be ready to start producing another product. That\textquotesingle{}s why it\textquotesingle{}s a usual practice to call the reset method at the end of the {\ttfamily get\+Product} method body. However, this behavior is not mandatory, and you can make your builders wait for an explicit reset call from the client code before disposing of the previous result. Please be careful here with the memory ownership. Once you call Get\+Product the user of this function is responsable to release this memory. Here could be a better option to use smart pointers to avoid memory leaks \Hypertarget{class_concrete_builder1_a821595a25c1445c931a07cf0e750b1f8}\label{class_concrete_builder1_a821595a25c1445c931a07cf0e750b1f8} 
+\index{ConcreteBuilder1@{ConcreteBuilder1}!ProducePartA@{ProducePartA}}
+\index{ProducePartA@{ProducePartA}!ConcreteBuilder1@{ConcreteBuilder1}}
+\doxysubsubsection{\texorpdfstring{ProducePartA()}{ProducePartA()}}
+{\footnotesize\ttfamily void Concrete\+Builder1\+::\+Produce\+PartA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+All production steps work with the same product instance. 
+
+Implements \mbox{\hyperlink{class_builder}{Builder}}.
+
+\Hypertarget{class_concrete_builder1_a8cf75e0d2054b8f55d8318675dc00440}\label{class_concrete_builder1_a8cf75e0d2054b8f55d8318675dc00440} 
+\index{ConcreteBuilder1@{ConcreteBuilder1}!ProducePartB@{ProducePartB}}
+\index{ProducePartB@{ProducePartB}!ConcreteBuilder1@{ConcreteBuilder1}}
+\doxysubsubsection{\texorpdfstring{ProducePartB()}{ProducePartB()}}
+{\footnotesize\ttfamily void Concrete\+Builder1\+::\+Produce\+PartB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_builder}{Builder}}.
+
+\Hypertarget{class_concrete_builder1_aa7184aadd59a222415344f8d4f20d657}\label{class_concrete_builder1_aa7184aadd59a222415344f8d4f20d657} 
+\index{ConcreteBuilder1@{ConcreteBuilder1}!ProducePartC@{ProducePartC}}
+\index{ProducePartC@{ProducePartC}!ConcreteBuilder1@{ConcreteBuilder1}}
+\doxysubsubsection{\texorpdfstring{ProducePartC()}{ProducePartC()}}
+{\footnotesize\ttfamily void Concrete\+Builder1\+::\+Produce\+PartC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_builder}{Builder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Creational\+\_\+\+Patterns/builder/main.\+cc\end{DoxyCompactItemize}

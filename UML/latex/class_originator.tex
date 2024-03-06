@@ -1,0 +1,43 @@
+\doxysection{Originator Class Reference}
+\hypertarget{class_originator}{}\label{class_originator}\index{Originator@{Originator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_originator_af97c7b09ded04cdd22bd4693c4630086}\label{class_originator_af97c7b09ded04cdd22bd4693c4630086} 
+{\bfseries Originator} (std\+::string state)
+\item 
+void \mbox{\hyperlink{class_originator_a8759d8303ea74b274bbd54f2f4489170}{Do\+Something}} ()
+\item 
+\mbox{\hyperlink{class_memento}{Memento}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_originator_a970b81e875405846783a8fd9bfbf19ea}{Save}} ()
+\item 
+void \mbox{\hyperlink{class_originator_a90d3207545b948f6ba29d1036b9a02ba}{Restore}} (\mbox{\hyperlink{class_memento}{Memento}} \texorpdfstring{$\ast$}{*}memento)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_originator}{Originator} holds some important state that may change over time. It also defines a method for saving the state inside a memento and another method for restoring the state from it. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_originator_a8759d8303ea74b274bbd54f2f4489170}\label{class_originator_a8759d8303ea74b274bbd54f2f4489170} 
+\index{Originator@{Originator}!DoSomething@{DoSomething}}
+\index{DoSomething@{DoSomething}!Originator@{Originator}}
+\doxysubsubsection{\texorpdfstring{DoSomething()}{DoSomething()}}
+{\footnotesize\ttfamily void Originator\+::\+Do\+Something (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The \doxylink{class_originator}{Originator}\textquotesingle{}s business logic may affect its internal state. Therefore, the client should backup the state before launching methods of the business logic via the save() method. \Hypertarget{class_originator_a90d3207545b948f6ba29d1036b9a02ba}\label{class_originator_a90d3207545b948f6ba29d1036b9a02ba} 
+\index{Originator@{Originator}!Restore@{Restore}}
+\index{Restore@{Restore}!Originator@{Originator}}
+\doxysubsubsection{\texorpdfstring{Restore()}{Restore()}}
+{\footnotesize\ttfamily void Originator\+::\+Restore (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_memento}{Memento}} \texorpdfstring{$\ast$}{*}}]{memento }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Restores the \doxylink{class_originator}{Originator}\textquotesingle{}s state from a memento object. \Hypertarget{class_originator_a970b81e875405846783a8fd9bfbf19ea}\label{class_originator_a970b81e875405846783a8fd9bfbf19ea} 
+\index{Originator@{Originator}!Save@{Save}}
+\index{Save@{Save}!Originator@{Originator}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_memento}{Memento}} \texorpdfstring{$\ast$}{*} Originator\+::\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Saves the current state inside a memento. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Behavioral\+\_\+\+Patterns/memento/main.\+cc\end{DoxyCompactItemize}

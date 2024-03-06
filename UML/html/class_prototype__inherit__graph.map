@@ -1,0 +1,7 @@
+<map id="Prototype" name="Prototype">
+<area shape="rect" id="Node000001" title=" " alt="" coords="115,5,192,32"/>
+<area shape="rect" id="Node000002" href="$class_concrete_prototype1.html" title=" " alt="" coords="5,80,142,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,44,89,82,85,78,127,41"/>
+<area shape="rect" id="Node000003" href="$class_concrete_prototype2.html" title=" " alt="" coords="165,80,302,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,41,222,78,218,82,177,44"/>
+</map>

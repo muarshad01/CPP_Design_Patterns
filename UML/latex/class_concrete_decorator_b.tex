@@ -1,0 +1,94 @@
+\doxysection{Concrete\+DecoratorB Class Reference}
+\hypertarget{class_concrete_decorator_b}{}\label{class_concrete_decorator_b}\index{ConcreteDecoratorB@{ConcreteDecoratorB}}
+
+
+Inheritance diagram for Concrete\+DecoratorB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_concrete_decorator_b__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Concrete\+DecoratorB\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_concrete_decorator_b__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_concrete_decorator_b_a6504c0c902f629c823612ef6a3693f03}\label{class_concrete_decorator_b_a6504c0c902f629c823612ef6a3693f03} 
+{\bfseries Concrete\+DecoratorB} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+std\+::string \mbox{\hyperlink{class_concrete_decorator_b_a0ae2ed203aea7ed7878e2d475b6bd021}{Operation}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_decorator}{Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Decorator} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+std\+::string \mbox{\hyperlink{class_decorator_a0c833e6b554c0cc86542347ba5827121}{Operation}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_accc1ef2e5da656f64230d42a0da6250c}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \texorpdfstring{$\ast$}{*}visitor) const =0
+\item 
+virtual \mbox{\hyperlink{class_component_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+void {\bfseries Set\+Parent} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}parent)
+\item 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Parent} () const
+\item 
+virtual void \mbox{\hyperlink{class_component_afb526f088de63722a10be6491ccfbdaf}{Add}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+virtual void \mbox{\hyperlink{class_component_a8d2ce56c619f8456fadff49a79694c18}{Remove}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+virtual bool \mbox{\hyperlink{class_component_a778ed768819b340b1f90b1573c5d09d3}{Is\+Composite}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_decorator}{Decorator}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries component\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries parent\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Decorators can execute their behavior either before or after the call to a wrapped object. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concrete_decorator_b_a0ae2ed203aea7ed7878e2d475b6bd021}\label{class_concrete_decorator_b_a0ae2ed203aea7ed7878e2d475b6bd021} 
+\index{ConcreteDecoratorB@{ConcreteDecoratorB}!Operation@{Operation}}
+\index{Operation@{Operation}!ConcreteDecoratorB@{ConcreteDecoratorB}}
+\doxysubsubsection{\texorpdfstring{Operation()}{Operation()}}
+{\footnotesize\ttfamily std\+::string Concrete\+Decorator\+B\+::\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The base \doxylink{class_component}{Component} may implement some default behavior or leave it to concrete classes (by declaring the method containing the behavior as "{}abstract"{}). 
+
+Implements \mbox{\hyperlink{class_component_a24eeec57512a3d94df4f464c43c4fbb5}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_concrete_decorator_b_a0ae2ed203aea7ed7878e2d475b6bd021_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Structural\+\_\+\+Patterns/decorator/main.\+cc\end{DoxyCompactItemize}

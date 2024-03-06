@@ -1,0 +1,106 @@
+\doxysection{Composite Class Reference}
+\hypertarget{class_composite}{}\label{class_composite}\index{Composite@{Composite}}
+
+
+Inheritance diagram for Composite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=146pt]{class_composite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Composite\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_composite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_composite_a5664cf250d164e716eec124c9955fa30}{Add}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component) override
+\item 
+void \mbox{\hyperlink{class_composite_ae710fcc581a55d5f62343403262ad02c}{Remove}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component) override
+\item 
+bool \mbox{\hyperlink{class_composite_a68830575d02338f3a7adc79c94acf963}{Is\+Composite}} () const override
+\item 
+std\+::string \mbox{\hyperlink{class_composite_a0a4ddbea8bc46d502b0f4668a5648f0d}{Operation}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_accc1ef2e5da656f64230d42a0da6250c}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \texorpdfstring{$\ast$}{*}visitor) const =0
+\item 
+virtual \mbox{\hyperlink{class_component_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+void {\bfseries Set\+Parent} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}parent)
+\item 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Parent} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_composite_ad3b15d874632db8d899edc007dc1173c}\label{class_composite_ad3b15d874632db8d899edc007dc1173c} 
+std\+::list$<$ \mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} $>$ {\bfseries children\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries parent\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_composite}{Composite} class represents the complex components that may have children. Usually, the \doxylink{class_composite}{Composite} objects delegate the actual work to their children and then "{}sum-\/up"{} the result. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_composite_a5664cf250d164e716eec124c9955fa30}\label{class_composite_a5664cf250d164e716eec124c9955fa30} 
+\index{Composite@{Composite}!Add@{Add}}
+\index{Add@{Add}!Composite@{Composite}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void Composite\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+A composite object can add or remove other components (both simple or complex) to or from its child list. 
+
+Reimplemented from \mbox{\hyperlink{class_component_afb526f088de63722a10be6491ccfbdaf}{Component}}.
+
+\Hypertarget{class_composite_a68830575d02338f3a7adc79c94acf963}\label{class_composite_a68830575d02338f3a7adc79c94acf963} 
+\index{Composite@{Composite}!IsComposite@{IsComposite}}
+\index{IsComposite@{IsComposite}!Composite@{Composite}}
+\doxysubsubsection{\texorpdfstring{IsComposite()}{IsComposite()}}
+{\footnotesize\ttfamily bool Composite\+::\+Is\+Composite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+You can provide a method that lets the client code figure out whether a component can bear children. 
+
+Reimplemented from \mbox{\hyperlink{class_component_a778ed768819b340b1f90b1573c5d09d3}{Component}}.
+
+\Hypertarget{class_composite_a0a4ddbea8bc46d502b0f4668a5648f0d}\label{class_composite_a0a4ddbea8bc46d502b0f4668a5648f0d} 
+\index{Composite@{Composite}!Operation@{Operation}}
+\index{Operation@{Operation}!Composite@{Composite}}
+\doxysubsubsection{\texorpdfstring{Operation()}{Operation()}}
+{\footnotesize\ttfamily std\+::string Composite\+::\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The \doxylink{class_composite}{Composite} executes its primary logic in a particular way. It traverses recursively through all its children, collecting and summing their results. Since the composite\textquotesingle{}s children pass these calls to their children and so forth, the whole object tree is traversed as a result. 
+
+Implements \mbox{\hyperlink{class_component_a24eeec57512a3d94df4f464c43c4fbb5}{Component}}.
+
+\Hypertarget{class_composite_ae710fcc581a55d5f62343403262ad02c}\label{class_composite_ae710fcc581a55d5f62343403262ad02c} 
+\index{Composite@{Composite}!Remove@{Remove}}
+\index{Remove@{Remove}!Composite@{Composite}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily void Composite\+::\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Have in mind that this method removes the pointer to the list but doesn\textquotesingle{}t frees the memory, you should do it manually or better use smart pointers. 
+
+Reimplemented from \mbox{\hyperlink{class_component}{Component}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Structural\+\_\+\+Patterns/composite/main.\+cc\end{DoxyCompactItemize}

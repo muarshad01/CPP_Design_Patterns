@@ -1,0 +1,81 @@
+\doxysection{Concrete\+ComponentA Class Reference}
+\hypertarget{class_concrete_component_a}{}\label{class_concrete_component_a}\index{ConcreteComponentA@{ConcreteComponentA}}
+
+
+Inheritance diagram for Concrete\+ComponentA\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_concrete_component_a__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Concrete\+ComponentA\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{class_concrete_component_a__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_concrete_component_a_a308bba23141231525d394c00425486de}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \texorpdfstring{$\ast$}{*}visitor) const override
+\item 
+std\+::string \mbox{\hyperlink{class_concrete_component_a_aafcd2ab5cd12250a884012cb25e766a1}{Exclusive\+Method\+Of\+Concrete\+ComponentA}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_component_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+void {\bfseries Set\+Parent} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}parent)
+\item 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Parent} () const
+\item 
+virtual void \mbox{\hyperlink{class_component_afb526f088de63722a10be6491ccfbdaf}{Add}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+virtual void \mbox{\hyperlink{class_component_a8d2ce56c619f8456fadff49a79694c18}{Remove}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+virtual bool \mbox{\hyperlink{class_component_a778ed768819b340b1f90b1573c5d09d3}{Is\+Composite}} () const
+\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a24eeec57512a3d94df4f464c43c4fbb5}{Operation}} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a24eeec57512a3d94df4f464c43c4fbb5}{Operation}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries parent\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Each Concrete \doxylink{class_component}{Component} must implement the {\ttfamily Accept} method in such a way that it calls the visitor\textquotesingle{}s method corresponding to the component\textquotesingle{}s class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concrete_component_a_a308bba23141231525d394c00425486de}\label{class_concrete_component_a_a308bba23141231525d394c00425486de} 
+\index{ConcreteComponentA@{ConcreteComponentA}!Accept@{Accept}}
+\index{Accept@{Accept}!ConcreteComponentA@{ConcreteComponentA}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily void Concrete\+Component\+A\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \texorpdfstring{$\ast$}{*}}]{visitor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Note that we\textquotesingle{}re calling {\ttfamily visit\+Concrete\+ComponentA}, which matches the current class name. This way we let the visitor know the class of the component it works with. 
+
+Implements \mbox{\hyperlink{class_component}{Component}}.
+
+\Hypertarget{class_concrete_component_a_aafcd2ab5cd12250a884012cb25e766a1}\label{class_concrete_component_a_aafcd2ab5cd12250a884012cb25e766a1} 
+\index{ConcreteComponentA@{ConcreteComponentA}!ExclusiveMethodOfConcreteComponentA@{ExclusiveMethodOfConcreteComponentA}}
+\index{ExclusiveMethodOfConcreteComponentA@{ExclusiveMethodOfConcreteComponentA}!ConcreteComponentA@{ConcreteComponentA}}
+\doxysubsubsection{\texorpdfstring{ExclusiveMethodOfConcreteComponentA()}{ExclusiveMethodOfConcreteComponentA()}}
+{\footnotesize\ttfamily std\+::string Concrete\+Component\+A\+::\+Exclusive\+Method\+Of\+Concrete\+ComponentA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Concrete Components may have special methods that don\textquotesingle{}t exist in their base class or interface. The \doxylink{class_visitor}{Visitor} is still able to use these methods since it\textquotesingle{}s aware of the component\textquotesingle{}s concrete class. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Behavioral\+\_\+\+Patterns/visitor/main.\+cc\end{DoxyCompactItemize}

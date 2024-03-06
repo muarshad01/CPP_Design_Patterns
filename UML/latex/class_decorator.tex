@@ -1,0 +1,95 @@
+\doxysection{Decorator Class Reference}
+\hypertarget{class_decorator}{}\label{class_decorator}\index{Decorator@{Decorator}}
+
+
+Inheritance diagram for Decorator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_decorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Decorator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_decorator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_decorator_aee8dcb28b605db0df351664ee2c3e159}\label{class_decorator_aee8dcb28b605db0df351664ee2c3e159} 
+{\bfseries Decorator} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+std\+::string \mbox{\hyperlink{class_decorator_a0c833e6b554c0cc86542347ba5827121}{Operation}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_accc1ef2e5da656f64230d42a0da6250c}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \texorpdfstring{$\ast$}{*}visitor) const =0
+\item 
+virtual \mbox{\hyperlink{class_component_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+void {\bfseries Set\+Parent} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}parent)
+\item 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Parent} () const
+\item 
+virtual void \mbox{\hyperlink{class_component_afb526f088de63722a10be6491ccfbdaf}{Add}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+virtual void \mbox{\hyperlink{class_component_a8d2ce56c619f8456fadff49a79694c18}{Remove}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+virtual bool \mbox{\hyperlink{class_component_a778ed768819b340b1f90b1573c5d09d3}{Is\+Composite}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_decorator_afc372717352839eea0ad3f2b4666dede}\label{class_decorator_afc372717352839eea0ad3f2b4666dede} 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries component\+\_\+}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_component}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries parent\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The base \doxylink{class_decorator}{Decorator} class follows the same interface as the other components. The primary purpose of this class is to define the wrapping interface for all concrete decorators. The default implementation of the wrapping code might include a field for storing a wrapped component and the means to initialize it. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_decorator_a0c833e6b554c0cc86542347ba5827121}\label{class_decorator_a0c833e6b554c0cc86542347ba5827121} 
+\index{Decorator@{Decorator}!Operation@{Operation}}
+\index{Operation@{Operation}!Decorator@{Decorator}}
+\doxysubsubsection{\texorpdfstring{Operation()}{Operation()}}
+{\footnotesize\ttfamily std\+::string Decorator\+::\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The \doxylink{class_decorator}{Decorator} delegates all work to the wrapped component. 
+
+Implements \mbox{\hyperlink{class_component_a24eeec57512a3d94df4f464c43c4fbb5}{Component}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_decorator_a0c833e6b554c0cc86542347ba5827121_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_decorator_a0c833e6b554c0cc86542347ba5827121_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Structural\+\_\+\+Patterns/decorator/main.\+cc\end{DoxyCompactItemize}

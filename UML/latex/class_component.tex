@@ -1,0 +1,145 @@
+\doxysection{Component Class Reference}
+\hypertarget{class_component}{}\label{class_component}\index{Component@{Component}}
+
+
+Inheritance diagram for Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_component__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_component_accc1ef2e5da656f64230d42a0da6250c}{Accept}} (\mbox{\hyperlink{class_visitor}{Visitor}} \texorpdfstring{$\ast$}{*}visitor) const =0
+\item 
+virtual \mbox{\hyperlink{class_component_a2e9aa4348314d981f05f67397ad2f872}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+\Hypertarget{class_component_a18d4b870ab8f711d030d4a7f1291c42b}\label{class_component_a18d4b870ab8f711d030d4a7f1291c42b} 
+void {\bfseries Set\+Parent} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}parent)
+\item 
+\Hypertarget{class_component_a94eaf55aa4014c80f4372d574b0d4886}\label{class_component_a94eaf55aa4014c80f4372d574b0d4886} 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Parent} () const
+\item 
+virtual void \mbox{\hyperlink{class_component_afb526f088de63722a10be6491ccfbdaf}{Add}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+virtual void \mbox{\hyperlink{class_component_a8d2ce56c619f8456fadff49a79694c18}{Remove}} (\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}component)
+\item 
+virtual bool \mbox{\hyperlink{class_component_a778ed768819b340b1f90b1573c5d09d3}{Is\+Composite}} () const
+\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a24eeec57512a3d94df4f464c43c4fbb5}{Operation}} () const =0
+\item 
+virtual std\+::string \mbox{\hyperlink{class_component_a24eeec57512a3d94df4f464c43c4fbb5}{Operation}} () const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_component_acca15441f5608ecb197a937d3468e074}\label{class_component_acca15441f5608ecb197a937d3468e074} 
+\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*} {\bfseries parent\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_component}{Component} interface declares an {\ttfamily accept} method that should take the base visitor interface as an argument.
+
+The base \doxylink{class_component}{Component} class declares common operations for both simple and complex objects of a composition.
+
+The base \doxylink{class_component}{Component} interface defines operations that can be altered by decorators. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_component_a2e9aa4348314d981f05f67397ad2f872}\label{class_component_a2e9aa4348314d981f05f67397ad2f872} 
+\index{Component@{Component}!````~Component@{\texorpdfstring{$\sim$}{\string~}Component}}
+\index{````~Component@{\texorpdfstring{$\sim$}{\string~}Component}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Component()}{\string~Component()}}
+{\footnotesize\ttfamily virtual Component\+::\texorpdfstring{$\sim$}{\string~}\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Optionally, the base \doxylink{class_component}{Component} can declare an interface for setting and accessing a parent of the component in a tree structure. It can also provide some default implementation for these methods. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_component_accc1ef2e5da656f64230d42a0da6250c}\label{class_component_accc1ef2e5da656f64230d42a0da6250c} 
+\index{Component@{Component}!Accept@{Accept}}
+\index{Accept@{Accept}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily virtual void Component\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visitor}{Visitor}} \texorpdfstring{$\ast$}{*}}]{visitor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_concrete_component_a_a308bba23141231525d394c00425486de}{Concrete\+ComponentA}}, and \mbox{\hyperlink{class_concrete_component_b_ade5efb83be3d3a4954e4326dc11bd380}{Concrete\+ComponentB}}.
+
+\Hypertarget{class_component_afb526f088de63722a10be6491ccfbdaf}\label{class_component_afb526f088de63722a10be6491ccfbdaf} 
+\index{Component@{Component}!Add@{Add}}
+\index{Add@{Add}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily virtual void Component\+::\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+In some cases, it would be beneficial to define the child-\/management operations right in the base \doxylink{class_component}{Component} class. This way, you won\textquotesingle{}t need to expose any concrete component classes to the client code, even during the object tree assembly. The downside is that these methods will be empty for the leaf-\/level components. 
+
+Reimplemented in \mbox{\hyperlink{class_composite_a5664cf250d164e716eec124c9955fa30}{Composite}}.
+
+\Hypertarget{class_component_a778ed768819b340b1f90b1573c5d09d3}\label{class_component_a778ed768819b340b1f90b1573c5d09d3} 
+\index{Component@{Component}!IsComposite@{IsComposite}}
+\index{IsComposite@{IsComposite}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{IsComposite()}{IsComposite()}}
+{\footnotesize\ttfamily virtual bool Component\+::\+Is\+Composite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+You can provide a method that lets the client code figure out whether a component can bear children. 
+
+Reimplemented in \mbox{\hyperlink{class_composite_a68830575d02338f3a7adc79c94acf963}{Composite}}.
+
+\Hypertarget{class_component_a24eeec57512a3d94df4f464c43c4fbb5}\label{class_component_a24eeec57512a3d94df4f464c43c4fbb5} 
+\index{Component@{Component}!Operation@{Operation}}
+\index{Operation@{Operation}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Operation()}{Operation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual std\+::string Component\+::\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+The base \doxylink{class_component}{Component} may implement some default behavior or leave it to concrete classes (by declaring the method containing the behavior as "{}abstract"{}). 
+
+Implemented in \mbox{\hyperlink{class_leaf_a2145f719011005d88839724eccf09bc5}{Leaf}}, \mbox{\hyperlink{class_composite_a0a4ddbea8bc46d502b0f4668a5648f0d}{Composite}}, \mbox{\hyperlink{class_concrete_component_a2aa261b6bbd07b9a537731d447d11185}{Concrete\+Component}}, \mbox{\hyperlink{class_decorator_a0c833e6b554c0cc86542347ba5827121}{Decorator}}, \mbox{\hyperlink{class_concrete_decorator_a_a02dd11c258e7877f10620c8a2a4753b5}{Concrete\+DecoratorA}}, and \mbox{\hyperlink{class_concrete_decorator_b_a0ae2ed203aea7ed7878e2d475b6bd021}{Concrete\+DecoratorB}}.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_component_a24eeec57512a3d94df4f464c43c4fbb5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_component_a24eeec57512a3d94df4f464c43c4fbb5}\label{class_component_a24eeec57512a3d94df4f464c43c4fbb5} 
+\index{Component@{Component}!Operation@{Operation}}
+\index{Operation@{Operation}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Operation()}{Operation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual std\+::string Component\+::\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_leaf_a2145f719011005d88839724eccf09bc5}{Leaf}}, \mbox{\hyperlink{class_composite_a0a4ddbea8bc46d502b0f4668a5648f0d}{Composite}}, \mbox{\hyperlink{class_concrete_component_a2aa261b6bbd07b9a537731d447d11185}{Concrete\+Component}}, \mbox{\hyperlink{class_decorator_a0c833e6b554c0cc86542347ba5827121}{Decorator}}, \mbox{\hyperlink{class_concrete_decorator_a_a02dd11c258e7877f10620c8a2a4753b5}{Concrete\+DecoratorA}}, and \mbox{\hyperlink{class_concrete_decorator_b_a0ae2ed203aea7ed7878e2d475b6bd021}{Concrete\+DecoratorB}}.
+
+\Hypertarget{class_component_a8d2ce56c619f8456fadff49a79694c18}\label{class_component_a8d2ce56c619f8456fadff49a79694c18} 
+\index{Component@{Component}!Remove@{Remove}}
+\index{Remove@{Remove}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}}
+{\footnotesize\ttfamily virtual void Component\+::\+Remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_component}{Component}} \texorpdfstring{$\ast$}{*}}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{class_composite_ae710fcc581a55d5f62343403262ad02c}{Composite}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Behavioral\+\_\+\+Patterns/visitor/main.\+cc\item 
+Structural\+\_\+\+Patterns/composite/main.\+cc\item 
+Structural\+\_\+\+Patterns/decorator/main.\+cc\end{DoxyCompactItemize}

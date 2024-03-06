@@ -1,0 +1,63 @@
+\doxysection{Real\+Subject Class Reference}
+\hypertarget{class_real_subject}{}\label{class_real_subject}\index{RealSubject@{RealSubject}}
+
+
+Inheritance diagram for Real\+Subject\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_real_subject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Real\+Subject\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=149pt]{class_real_subject__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_real_subject_a2d814c33a5dc6af17e09c76782ec2dfa}{Request}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_subject}{Subject}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_subject_abcdd2d6a7779cf427276086872510ca9}{Attach}} (\mbox{\hyperlink{class_i_observer}{IObserver}} \texorpdfstring{$\ast$}{*}observer) override
+\item 
+void \mbox{\hyperlink{class_subject_a6f657b13894fc037731a27220c16716a}{Detach}} (\mbox{\hyperlink{class_i_observer}{IObserver}} \texorpdfstring{$\ast$}{*}observer) override
+\item 
+void \mbox{\hyperlink{class_subject_a48626cea0c6d7df922747bebf80f99b8}{Notify}} () override
+\item 
+void {\bfseries Create\+Message} (std\+::string message="{}Empty"{})
+\item 
+void {\bfseries How\+Many\+Observer} ()
+\item 
+void \mbox{\hyperlink{class_subject_a8225e72a5669d0d2bd1f3031b16e26fa}{Some\+Business\+Logic}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_real_subject}{Real\+Subject} contains some core business logic. Usually, Real\+Subjects are capable of doing some useful work which may also be very slow or sensitive -\/ e.\+g. correcting input data. A \doxylink{class_proxy}{Proxy} can solve these issues without any changes to the \doxylink{class_real_subject}{Real\+Subject}\textquotesingle{}s code. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_real_subject_a2d814c33a5dc6af17e09c76782ec2dfa}\label{class_real_subject_a2d814c33a5dc6af17e09c76782ec2dfa} 
+\index{RealSubject@{RealSubject}!Request@{Request}}
+\index{Request@{Request}!RealSubject@{RealSubject}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily void Real\+Subject\+::\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_subject}{Subject}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Structural\+\_\+\+Patterns/proxy/main.\+cc\end{DoxyCompactItemize}

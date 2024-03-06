@@ -1,0 +1,25 @@
+\doxysection{Caretaker Class Reference}
+\hypertarget{class_caretaker}{}\label{class_caretaker}\index{Caretaker@{Caretaker}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_caretaker_a3a251fd796b2d2e6a10ce8ee37465438}\label{class_caretaker_a3a251fd796b2d2e6a10ce8ee37465438} 
+{\bfseries Caretaker} (\mbox{\hyperlink{class_originator}{Originator}} \texorpdfstring{$\ast$}{*}originator)
+\item 
+\Hypertarget{class_caretaker_a90dc4a499ea9aae6357b4436e896616e}\label{class_caretaker_a90dc4a499ea9aae6357b4436e896616e} 
+void {\bfseries Backup} ()
+\item 
+\Hypertarget{class_caretaker_a95839bed354e830ef30b850f5600c49b}\label{class_caretaker_a95839bed354e830ef30b850f5600c49b} 
+void {\bfseries Undo} ()
+\item 
+\Hypertarget{class_caretaker_a38e118958c7ecc65b50a8f5e98b0bb2c}\label{class_caretaker_a38e118958c7ecc65b50a8f5e98b0bb2c} 
+void {\bfseries Show\+History} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_caretaker}{Caretaker} doesn\textquotesingle{}t depend on the Concrete \doxylink{class_memento}{Memento} class. Therefore, it doesn\textquotesingle{}t have access to the originator\textquotesingle{}s state, stored inside the memento. It works with all mementos via the base \doxylink{class_memento}{Memento} interface. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Behavioral\+\_\+\+Patterns/memento/main.\+cc\end{DoxyCompactItemize}

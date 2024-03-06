@@ -1,0 +1,35 @@
+\doxysection{Prototype\+Factory Class Reference}
+\hypertarget{class_prototype_factory}{}\label{class_prototype_factory}\index{PrototypeFactory@{PrototypeFactory}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_prototype_factory_aaff024b367bcc78f2dca6b93746af0a7}{\texorpdfstring{$\sim$}{\string~}\+Prototype\+Factory}} ()
+\item 
+\mbox{\hyperlink{class_prototype}{Prototype}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_prototype_factory_af0eb4018b2f31faef356d5cfa59ee562}{Create\+Prototype}} (Type type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+In \doxylink{class_prototype_factory}{Prototype\+Factory} you have two concrete prototypes, one for each concrete prototype class, so each time you want to create a bullet , you can use the existing ones and clone those. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_prototype_factory_aaff024b367bcc78f2dca6b93746af0a7}\label{class_prototype_factory_aaff024b367bcc78f2dca6b93746af0a7} 
+\index{PrototypeFactory@{PrototypeFactory}!````~PrototypeFactory@{\texorpdfstring{$\sim$}{\string~}PrototypeFactory}}
+\index{````~PrototypeFactory@{\texorpdfstring{$\sim$}{\string~}PrototypeFactory}!PrototypeFactory@{PrototypeFactory}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PrototypeFactory()}{\string~PrototypeFactory()}}
+{\footnotesize\ttfamily Prototype\+Factory\+::\texorpdfstring{$\sim$}{\string~}\+Prototype\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Be carefull of free all memory allocated. Again, if you have smart pointers knowelege will be better to use it here. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_prototype_factory_af0eb4018b2f31faef356d5cfa59ee562}\label{class_prototype_factory_af0eb4018b2f31faef356d5cfa59ee562} 
+\index{PrototypeFactory@{PrototypeFactory}!CreatePrototype@{CreatePrototype}}
+\index{CreatePrototype@{CreatePrototype}!PrototypeFactory@{PrototypeFactory}}
+\doxysubsubsection{\texorpdfstring{CreatePrototype()}{CreatePrototype()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_prototype}{Prototype}} \texorpdfstring{$\ast$}{*} Prototype\+Factory\+::\+Create\+Prototype (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Notice here that you just need to specify the type of the prototype you want and the method will create from the object with this type. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Creational\+\_\+\+Patterns/prototype/main.\+cc\end{DoxyCompactItemize}

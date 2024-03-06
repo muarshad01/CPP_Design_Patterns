@@ -1,0 +1,6 @@
+<map id="ConcreteComponent" name="ConcreteComponent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,81,145,108"/>
+<area shape="rect" id="Node000002" href="$class_component.html" title=" " alt="" coords="31,5,119,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,47,78,81,72,81,72,47"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="136,11,145,19,137,26,120,28,119,23,135,21,140,19,133,15"/>
+</map>

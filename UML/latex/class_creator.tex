@@ -1,0 +1,57 @@
+\doxysection{Creator Class Reference}
+\hypertarget{class_creator}{}\label{class_creator}\index{Creator@{Creator}}
+
+
+Inheritance diagram for Creator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_creator__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_creator_a2fe5ac9bd6c9852ab6b92bc7b80c3fef}{\texorpdfstring{$\sim$}{\string~}\+Creator}} ()
+\item 
+virtual \mbox{\hyperlink{class_product}{Product}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_creator_a1608186cb77698174a0bceb231f624a8}{Factory\+Method}} () const =0
+\item 
+std\+::string \mbox{\hyperlink{class_creator_a588e04ad501855570b655d1bf7235d58}{Some\+Operation}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_creator}{Creator} class declares the factory method that is supposed to return an object of a \doxylink{class_product}{Product} class. The \doxylink{class_creator}{Creator}\textquotesingle{}s subclasses usually provide the implementation of this method. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_creator_a2fe5ac9bd6c9852ab6b92bc7b80c3fef}\label{class_creator_a2fe5ac9bd6c9852ab6b92bc7b80c3fef} 
+\index{Creator@{Creator}!````~Creator@{\texorpdfstring{$\sim$}{\string~}Creator}}
+\index{````~Creator@{\texorpdfstring{$\sim$}{\string~}Creator}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Creator()}{\string~Creator()}}
+{\footnotesize\ttfamily virtual Creator\+::\texorpdfstring{$\sim$}{\string~}\+Creator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Note that the \doxylink{class_creator}{Creator} may also provide some default implementation of the factory method. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_creator_a1608186cb77698174a0bceb231f624a8}\label{class_creator_a1608186cb77698174a0bceb231f624a8} 
+\index{Creator@{Creator}!FactoryMethod@{FactoryMethod}}
+\index{FactoryMethod@{FactoryMethod}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{FactoryMethod()}{FactoryMethod()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_product}{Product}} \texorpdfstring{$\ast$}{*} Creator\+::\+Factory\+Method (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_concrete_creator1_a6bef1b560ae563eba3c095041b92a422}{Concrete\+Creator1}}.
+
+\Hypertarget{class_creator_a588e04ad501855570b655d1bf7235d58}\label{class_creator_a588e04ad501855570b655d1bf7235d58} 
+\index{Creator@{Creator}!SomeOperation@{SomeOperation}}
+\index{SomeOperation@{SomeOperation}!Creator@{Creator}}
+\doxysubsubsection{\texorpdfstring{SomeOperation()}{SomeOperation()}}
+{\footnotesize\ttfamily std\+::string Creator\+::\+Some\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Also note that, despite its name, the \doxylink{class_creator}{Creator}\textquotesingle{}s primary responsibility is not creating products. Usually, it contains some core business logic that relies on \doxylink{class_product}{Product} objects, returned by the factory method. Subclasses can indirectly change that business logic by overriding the factory method and returning a different type of product from it. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Creational\+\_\+\+Patterns/factory\+\_\+method/main.\+cc\end{DoxyCompactItemize}

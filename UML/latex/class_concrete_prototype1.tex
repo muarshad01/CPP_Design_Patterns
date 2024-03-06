@@ -1,0 +1,66 @@
+\doxysection{Concrete\+Prototype1 Class Reference}
+\hypertarget{class_concrete_prototype1}{}\label{class_concrete_prototype1}\index{ConcretePrototype1@{ConcretePrototype1}}
+
+
+Inheritance diagram for Concrete\+Prototype1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{class_concrete_prototype1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Concrete\+Prototype1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_concrete_prototype1__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_concrete_prototype1_aef5c05214f7082bc0e02adb8849b743b}\label{class_concrete_prototype1_aef5c05214f7082bc0e02adb8849b743b} 
+{\bfseries Concrete\+Prototype1} (string prototype\+\_\+name, float concrete\+\_\+prototype\+\_\+field)
+\item 
+\mbox{\hyperlink{class_prototype}{Prototype}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_concrete_prototype1_abdc3549c060fcedc55374eb44b2ec8d1}{Clone}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_prototype}{Prototype}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Prototype} (string prototype\+\_\+name)
+\item 
+virtual void {\bfseries Method} (float prototype\+\_\+field)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_prototype}{Prototype}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries prototype\+\_\+name\+\_\+}
+\item 
+float {\bfseries prototype\+\_\+field\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_concrete_prototype1}{Concrete\+Prototype1} is a Sub-\/\+Class of \doxylink{class_prototype}{Prototype} and implement the Clone Method In this example all data members of \doxylink{class_prototype}{Prototype} Class are in the Stack. If you have pointers in your properties for ex\+: String\texorpdfstring{$\ast$}{*} name\+\_\+ ,you will need to implement the Copy-\/\+Constructor to make sure you have a deep copy from the clone method 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_concrete_prototype1_abdc3549c060fcedc55374eb44b2ec8d1}\label{class_concrete_prototype1_abdc3549c060fcedc55374eb44b2ec8d1} 
+\index{ConcretePrototype1@{ConcretePrototype1}!Clone@{Clone}}
+\index{Clone@{Clone}!ConcretePrototype1@{ConcretePrototype1}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_prototype}{Prototype}} \texorpdfstring{$\ast$}{*} Concrete\+Prototype1\+::\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Notice that Clone method return a Pointer to a new \doxylink{class_concrete_prototype1}{Concrete\+Prototype1} replica. so, the client (who call the clone method) has the responsability to free that memory. I you have smart pointer knowledge you may prefer to use unique\+\_\+pointer here. 
+
+Implements \mbox{\hyperlink{class_prototype}{Prototype}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Creational\+\_\+\+Patterns/prototype/main.\+cc\end{DoxyCompactItemize}

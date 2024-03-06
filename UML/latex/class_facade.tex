@@ -1,0 +1,54 @@
+\doxysection{Facade Class Reference}
+\hypertarget{class_facade}{}\label{class_facade}\index{Facade@{Facade}}
+
+
+Collaboration diagram for Facade\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=251pt]{class_facade__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_facade_aabad7818dd19944490d93d8ebe10d7c8}{Facade}} (\mbox{\hyperlink{class_subsystem1}{Subsystem1}} \texorpdfstring{$\ast$}{*}subsystem1=nullptr, \mbox{\hyperlink{class_subsystem2}{Subsystem2}} \texorpdfstring{$\ast$}{*}subsystem2=nullptr)
+\item 
+std\+::string \mbox{\hyperlink{class_facade_a4805be1371e517a8763d6f3a094d0cc8}{Operation}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_facade_a5e69f15d10d79cabe2d624c4ddd41cf9}\label{class_facade_a5e69f15d10d79cabe2d624c4ddd41cf9} 
+\mbox{\hyperlink{class_subsystem1}{Subsystem1}} \texorpdfstring{$\ast$}{*} {\bfseries subsystem1\+\_\+}
+\item 
+\Hypertarget{class_facade_aefa08934e2794228009f23a978f5b0e2}\label{class_facade_aefa08934e2794228009f23a978f5b0e2} 
+\mbox{\hyperlink{class_subsystem2}{Subsystem2}} \texorpdfstring{$\ast$}{*} {\bfseries subsystem2\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_facade}{Facade} class provides a simple interface to the complex logic of one or several subsystems. The \doxylink{class_facade}{Facade} delegates the client requests to the appropriate objects within the subsystem. The \doxylink{class_facade}{Facade} is also responsible for managing their lifecycle. All of this shields the client from the undesired complexity of the subsystem. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_facade_aabad7818dd19944490d93d8ebe10d7c8}\label{class_facade_aabad7818dd19944490d93d8ebe10d7c8} 
+\index{Facade@{Facade}!Facade@{Facade}}
+\index{Facade@{Facade}!Facade@{Facade}}
+\doxysubsubsection{\texorpdfstring{Facade()}{Facade()}}
+{\footnotesize\ttfamily Facade\+::\+Facade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_subsystem1}{Subsystem1}} \texorpdfstring{$\ast$}{*}}]{subsystem1 = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{class_subsystem2}{Subsystem2}} \texorpdfstring{$\ast$}{*}}]{subsystem2 = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Depending on your application\textquotesingle{}s needs, you can provide the \doxylink{class_facade}{Facade} with existing subsystem objects or force the \doxylink{class_facade}{Facade} to create them on its own. In this case we will delegate the memory ownership to \doxylink{class_facade}{Facade} Class 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_facade_a4805be1371e517a8763d6f3a094d0cc8}\label{class_facade_a4805be1371e517a8763d6f3a094d0cc8} 
+\index{Facade@{Facade}!Operation@{Operation}}
+\index{Operation@{Operation}!Facade@{Facade}}
+\doxysubsubsection{\texorpdfstring{Operation()}{Operation()}}
+{\footnotesize\ttfamily std\+::string Facade\+::\+Operation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The \doxylink{class_facade}{Facade}\textquotesingle{}s methods are convenient shortcuts to the sophisticated functionality of the subsystems. However, clients get only to a fraction of a subsystem\textquotesingle{}s capabilities. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Structural\+\_\+\+Patterns/facade/main.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,35 @@
+\doxysection{Director Class Reference}
+\hypertarget{class_director}{}\label{class_director}\index{Director@{Director}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_director_a4224762aafb60305ece373abf64b89eb}{set\+\_\+builder}} (\mbox{\hyperlink{class_builder}{Builder}} \texorpdfstring{$\ast$}{*}builder)
+\item 
+void \mbox{\hyperlink{class_director_a01292c6eeefb61a4a2cc0a2f627a9362}{Build\+Minimal\+Viable\+Product}} ()
+\item 
+\Hypertarget{class_director_a7af52e84691761bb605021aa90ec2dbe}\label{class_director_a7af52e84691761bb605021aa90ec2dbe} 
+void {\bfseries Build\+Full\+Featured\+Product} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_director}{Director} is only responsible for executing the building steps in a particular sequence. It is helpful when producing products according to a specific order or configuration. Strictly speaking, the \doxylink{class_director}{Director} class is optional, since the client can control builders directly. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_director_a01292c6eeefb61a4a2cc0a2f627a9362}\label{class_director_a01292c6eeefb61a4a2cc0a2f627a9362} 
+\index{Director@{Director}!BuildMinimalViableProduct@{BuildMinimalViableProduct}}
+\index{BuildMinimalViableProduct@{BuildMinimalViableProduct}!Director@{Director}}
+\doxysubsubsection{\texorpdfstring{BuildMinimalViableProduct()}{BuildMinimalViableProduct()}}
+{\footnotesize\ttfamily void Director\+::\+Build\+Minimal\+Viable\+Product (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The \doxylink{class_director}{Director} can construct several product variations using the same building steps. \Hypertarget{class_director_a4224762aafb60305ece373abf64b89eb}\label{class_director_a4224762aafb60305ece373abf64b89eb} 
+\index{Director@{Director}!set\_builder@{set\_builder}}
+\index{set\_builder@{set\_builder}!Director@{Director}}
+\doxysubsubsection{\texorpdfstring{set\_builder()}{set\_builder()}}
+{\footnotesize\ttfamily void Director\+::set\+\_\+builder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_builder}{Builder}} \texorpdfstring{$\ast$}{*}}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The \doxylink{class_director}{Director} works with any builder instance that the client code passes to it. This way, the client code may alter the final type of the newly assembled product. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Creational\+\_\+\+Patterns/builder/main.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_handler.html" title=" " alt="" coords="5,56,71,83"/>
+<area shape="rect" id="Node000001" href="$class_abstract_handler.html" title=" " alt="" coords="119,56,233,83"/>
+<area shape="poly" id="edge25_Node000000_Node000001" title=" " alt="" coords="86,67,118,67,118,72,86,72"/>
+<area shape="rect" id="Node000002" href="$class_dog_handler.html" title=" " alt="" coords="293,5,381,32"/>
+<area shape="poly" id="edge26_Node000001_Node000002" title=" " alt="" coords="235,48,291,30,293,35,236,53"/>
+<area shape="rect" id="Node000003" href="$class_monkey_handler.html" title=" " alt="" coords="281,56,392,83"/>
+<area shape="poly" id="edge27_Node000001_Node000003" title=" " alt="" coords="249,67,280,67,280,72,249,72"/>
+<area shape="rect" id="Node000004" href="$class_squirrel_handler.html" title=" " alt="" coords="282,107,391,133"/>
+<area shape="poly" id="edge28_Node000001_Node000004" title=" " alt="" coords="236,85,293,104,291,109,235,91"/>
+</map>

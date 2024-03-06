@@ -1,0 +1,101 @@
+\doxysection{Subject Class Reference}
+\hypertarget{class_subject}{}\label{class_subject}\index{Subject@{Subject}}
+
+
+Inheritance diagram for Subject\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_subject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Subject\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=131pt]{class_subject__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_subject_abcdd2d6a7779cf427276086872510ca9}{Attach}} (\mbox{\hyperlink{class_i_observer}{IObserver}} \texorpdfstring{$\ast$}{*}observer) override
+\item 
+void \mbox{\hyperlink{class_subject_a6f657b13894fc037731a27220c16716a}{Detach}} (\mbox{\hyperlink{class_i_observer}{IObserver}} \texorpdfstring{$\ast$}{*}observer) override
+\item 
+void \mbox{\hyperlink{class_subject_a48626cea0c6d7df922747bebf80f99b8}{Notify}} () override
+\item 
+\Hypertarget{class_subject_ac192b6684d8d7b72356dce436f3b4c89}\label{class_subject_ac192b6684d8d7b72356dce436f3b4c89} 
+void {\bfseries Create\+Message} (std\+::string message="{}Empty"{})
+\item 
+\Hypertarget{class_subject_ab59c17b6f53c4a19ad96e7ebf8a7603a}\label{class_subject_ab59c17b6f53c4a19ad96e7ebf8a7603a} 
+void {\bfseries How\+Many\+Observer} ()
+\item 
+void \mbox{\hyperlink{class_subject_a8225e72a5669d0d2bd1f3031b16e26fa}{Some\+Business\+Logic}} ()
+\item 
+virtual void \mbox{\hyperlink{class_subject_a37408a389239b79d6c55c6747a9d9aa9}{Request}} () const =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_subject}{Subject} owns some important state and notifies observers when the state changes.
+
+The \doxylink{class_subject}{Subject} interface declares common operations for both \doxylink{class_real_subject}{Real\+Subject} and the \doxylink{class_proxy}{Proxy}. As long as the client works with \doxylink{class_real_subject}{Real\+Subject} using this interface, you\textquotesingle{}ll be able to pass it a proxy instead of a real subject. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_subject_abcdd2d6a7779cf427276086872510ca9}\label{class_subject_abcdd2d6a7779cf427276086872510ca9} 
+\index{Subject@{Subject}!Attach@{Attach}}
+\index{Attach@{Attach}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{Attach()}{Attach()}}
+{\footnotesize\ttfamily void Subject\+::\+Attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_observer}{IObserver}} \texorpdfstring{$\ast$}{*}}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The subscription management methods. 
+
+Implements \mbox{\hyperlink{class_i_subject}{ISubject}}.
+
+\Hypertarget{class_subject_a6f657b13894fc037731a27220c16716a}\label{class_subject_a6f657b13894fc037731a27220c16716a} 
+\index{Subject@{Subject}!Detach@{Detach}}
+\index{Detach@{Detach}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{Detach()}{Detach()}}
+{\footnotesize\ttfamily void Subject\+::\+Detach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_i_observer}{IObserver}} \texorpdfstring{$\ast$}{*}}]{observer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_i_subject}{ISubject}}.
+
+\Hypertarget{class_subject_a48626cea0c6d7df922747bebf80f99b8}\label{class_subject_a48626cea0c6d7df922747bebf80f99b8} 
+\index{Subject@{Subject}!Notify@{Notify}}
+\index{Notify@{Notify}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{Notify()}{Notify()}}
+{\footnotesize\ttfamily void Subject\+::\+Notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_i_subject}{ISubject}}.
+
+\Hypertarget{class_subject_a37408a389239b79d6c55c6747a9d9aa9}\label{class_subject_a37408a389239b79d6c55c6747a9d9aa9} 
+\index{Subject@{Subject}!Request@{Request}}
+\index{Request@{Request}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily virtual void Subject\+::\+Request (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_proxy_aadbde18a488c8b95bf7d72f281375894}{Proxy}}.
+
+\Hypertarget{class_subject_a8225e72a5669d0d2bd1f3031b16e26fa}\label{class_subject_a8225e72a5669d0d2bd1f3031b16e26fa} 
+\index{Subject@{Subject}!SomeBusinessLogic@{SomeBusinessLogic}}
+\index{SomeBusinessLogic@{SomeBusinessLogic}!Subject@{Subject}}
+\doxysubsubsection{\texorpdfstring{SomeBusinessLogic()}{SomeBusinessLogic()}}
+{\footnotesize\ttfamily void Subject\+::\+Some\+Business\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Usually, the subscription logic is only a fraction of what a \doxylink{class_subject}{Subject} can really do. Subjects commonly hold some important business logic, that triggers a notification method whenever something important is about to happen (or after it). 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Behavioral\+\_\+\+Patterns/observer/main.\+cc\item 
+Structural\+\_\+\+Patterns/proxy/main.\+cc\end{DoxyCompactItemize}
