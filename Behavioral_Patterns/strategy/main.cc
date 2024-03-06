@@ -46,11 +46,14 @@ public:
      */
     void doSomeBusinessLogic() const
     {
-        if (strategy_) {
+        if (strategy_)
+        {
             std::cout << "Context: Sorting data using the strategy (not sure how it'll do it)\n";
             std::string result = strategy_->doAlgorithm("aecbd");
             std::cout << result << "\n";
-        } else {
+        }
+        else
+        {
             std::cout << "Context: Strategy isn't set\n";
         }
     }
