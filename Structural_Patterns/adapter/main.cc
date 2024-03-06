@@ -5,7 +5,6 @@ class Target
 {
 public:
     virtual ~Target() = default;
-
     virtual std::string Request() const
     {
         return "Target: The default target's behavior.";
@@ -28,18 +27,15 @@ public:
 
 /**
  * The Adapter makes the Adaptee's interface compatible with the Target's
- * interface.
+ * interface using multiple inheritance.
  */
-class Adapter : public Target
+class Adapter : public Target, public Adaptee
 {
-private:
-    Adaptee *adaptee_;
-
 public:
-    Adapter(Adaptee *adaptee) : adaptee_(adaptee) {}
+    Adapter() {}
     std::string Request() const override
     {
-        std::string to_reverse = this->adaptee_->SpecificRequest();
+        std::string to_reverse = SpecificRequest();
         std::reverse(to_reverse.begin(), to_reverse.end());
         return "Adapter: (TRANSLATED) " + to_reverse;
     }
@@ -64,7 +60,7 @@ int main()
     std::cout << "Adaptee: " << adaptee->SpecificRequest();
     std::cout << "\n\n";
     std::cout << "Client: But I can work with it via the Adapter:\n";
-    Adapter *adapter = new Adapter(adaptee);
+    Adapter *adapter = new Adapter;
     ClientCode(adapter);
     std::cout << "\n";
 
@@ -74,3 +70,8 @@ int main()
 
     return 0;
 }
+Output.txt : Execution result
+                 Client : I can work just fine with the Target objects : Target : The default target's behavior.
+
+                                                                                  Client : The Adaptee class has a weird interface.See,
+    I don't understand it: Adaptee :.eetpadA eht
