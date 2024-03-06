@@ -28,15 +28,15 @@
 
 ## Behavioral Design Patterns (C2-I-M2-O-S2-TV)
 
-* [Chain of Responsibility]()
-* [Command]()
-* [Iterator]()
-* [Memento]()
-* [Mediator]()
-* [Observer]()
-* [Strategy]()
-* [State]()
-* [Template]()
-* [Visitor]()
+* [Chain of Responsibility](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/chain_of_responsibility)
+* [Command](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/command)
+* [Iterator](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/iterator)
+* [Memento](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/memento)
+* [Mediator](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/mediator)
+* [Observer](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/observer)
+* [Strategy](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/strategy)
+* [State](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/state)
+* [Template](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/template_method)
+* [Visitor](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/visitor)
 
 ***
