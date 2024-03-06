@@ -43,7 +43,7 @@
 
 ## Intentation
 
-* How to remove "2" spaces and make it to default "Tab" space
+* How to remove "2" spaces and make it to default "Tab (4)" space
 ```
 1. Go to: settings > workspace settings > Text editor
 2. uncheck 'Detect Indentation' to stick to your default setting.
