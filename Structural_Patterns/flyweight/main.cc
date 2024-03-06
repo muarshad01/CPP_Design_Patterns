@@ -151,18 +151,18 @@ int main()
     factory->ListFlyweights();
 
     AddCarToPoliceDatabase(*factory,
-                            "CL234IR",
-                            "James Doe",
-                            "BMW",
-                            "M5",
-                            "red");
+                           "CL234IR",
+                           "James Doe",
+                           "BMW",
+                           "M5",
+                           "red");
 
     AddCarToPoliceDatabase(*factory,
-                            "CL234IR",
-                            "James Doe",
-                            "BMW",
-                            "X1",
-                            "red");
+                           "CL234IR",
+                           "James Doe",
+                           "BMW",
+                           "X1",
+                           "red");
     factory->ListFlyweights();
     delete factory;
 
