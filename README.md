@@ -40,3 +40,13 @@
 * [Visitor](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/visitor)
 
 ***
+
+## Intentation
+
+* How to remove "2" spaces and make it to default "Tab" space
+```
+1. Go to: settings > workspace settings > Text editor
+2. uncheck 'Detect Indentation' to stick to your default setting.
+3. Then restart the application.
+```
+***
