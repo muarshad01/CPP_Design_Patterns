@@ -5,6 +5,7 @@
  * provides only primitive operations, while the Abstraction defines higher-
  * level operations based on those primitives.
  */
+#include <iostream>
 
 class Implementation
 {
@@ -25,6 +26,7 @@ public:
         return "ConcreteImplementationA: Here's the result on the platform A.\n";
     }
 };
+
 class ConcreteImplementationB : public Implementation
 {
 public:
