@@ -94,3 +94,14 @@ public:
   ...
 };
 ```
+***
+
+## Virtual Destructor
+```c++
+class Prototype
+{
+public:
+    Prototype() {}
+    virtual ~Prototype() {}
+};
+```
