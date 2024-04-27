@@ -133,13 +133,43 @@ int main()
 
 ## Pure Virtual Function
 ```c++
-// An abstract class
-class Test {
-    // Data members of class
-public:
-    // Pure Virtual Function
-    virtual void show() = 0;
+// C++ Program to illustrate the abstract class and virtual functions
+#include <iostream>
+using namespace std;
  
-    /* Other members */
+class Base {
+    // private member variable
+    int x;
+ 
+public:
+    // pure virtual function
+    virtual void fun() = 0;
+ 
+    // getter function to access x
+    int getX() { return x; }
 };
+ 
+// This class inherits from Base and implements fun()
+class Derived : public Base {
+    // private member variable
+    int y;
+ 
+public:
+    // implementation of the pure virtual function
+    void fun() { cout << "fun() called"; }
+};
+ 
+int main(void)
+{
+    // creating an object of Derived class
+    Derived d;
+ 
+    // calling the fun() function of Derived class
+    d.fun();
+ 
+    return 0;
+}
 ```
+* A pure virtual function is implemented by classes that are derived from an Abstract class.
+
+*** 
