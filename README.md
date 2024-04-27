@@ -49,6 +49,11 @@
 2. uncheck 'Detect Indentation' to stick to your default setting.
 3. Then restart the application.
 ```
+
+## Format Code
+* `command A`
+* `shift + option + F`
+  
 ***
 
 ## Run the Code
@@ -59,3 +64,5 @@
   ```
 * `main` -> Right-click -> `Open in Integrated Terminal`
 * `$ ./main`
+
+***
