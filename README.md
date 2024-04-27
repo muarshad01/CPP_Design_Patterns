@@ -57,5 +57,5 @@
   C/C++: g++ build active file
   compiler: /usr/bin/g++
   ```
-* `main` -> right-click -> `Open in Integrated Terminal`
+* `main` -> Right-click -> `Open in Integrated Terminal`
 * `$ ./main`
