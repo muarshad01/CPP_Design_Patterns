@@ -19,7 +19,7 @@
 * [Adapter](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/adapter) -- April 27, 2024
 * [Bridge](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/bridge)
 * [Composite](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/composite) -- April 27, 2024
-* [Decorator](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/decorator)
+* [Decorator](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/decorator) -- April 27, 2024
 * [Facade](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/facade)
 * [Flyweight](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/flyweight)
 * [Proxy](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/proxy)
