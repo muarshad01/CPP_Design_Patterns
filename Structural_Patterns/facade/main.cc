@@ -3,6 +3,7 @@
  * In any case, to the Subsystem, the Facade is yet another client, and it's not
  * a part of the Subsystem.
  */
+#include <iostream>
 class Subsystem1
 {
 public:
