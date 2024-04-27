@@ -16,7 +16,7 @@
 
 ## Structural Design Patterns (ABCD-F2-P)
 
-* [Adapter](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/adapter)
+* [Adapter](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/adapter) -- April 27, 2024
 * [Bridge](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/bridge)
 * [Composite](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/composite)
 * [Decorator](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Structural_Patterns/decorator)
