@@ -50,3 +50,5 @@
 3. Then restart the application.
 ```
 ***
+
+## Run Code
