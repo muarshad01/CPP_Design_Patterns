@@ -84,16 +84,7 @@ class A : public B, public C`
   ...
 };
 ```
-***
 
-```c++
-class Target
-{
-public:
-  virtual ~Target() = default;
-  ...
-};
-```
 ***
 
 ## Virtual Destructor
@@ -126,6 +117,15 @@ int main()
   getchar();
   return 0;
 }
+```
+
+```c++
+class Target
+{
+public:
+  virtual ~Target() = default;
+  ...
+};
 ```
 * Making base class destructor virtual guarantees that the object of derived class is destructed properly, i.e., both base class and derived class destructors are called.
 
