@@ -74,3 +74,6 @@ Myclass object;                   //object has automatic storage duration (usual
 ```
 * You create objects with `dynamic storage duration (usually on the heap) if you plan on using them throughout a long period of time` and you create objects with `automatic storage duration (usually on the stack) for a short lifetime (or scope)`.
 * In fact, `when creating an object with new`, you always have to remember destroying it with `delete object`
+
+  ## Multiple Inheritance
+  * `class A : public B, public C`
