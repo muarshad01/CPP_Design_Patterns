@@ -51,4 +51,10 @@
 ```
 ***
 
-## Run Code
+## Run the Code
+* `main.cpp` -> Terminal -> `Run Build Task` (shift + command + b)
+  ```
+  C/C++: g++ build active file
+  compiler: /usr/bin/g++
+  ```
+* main -> right-click Open in Integrated Terminal
