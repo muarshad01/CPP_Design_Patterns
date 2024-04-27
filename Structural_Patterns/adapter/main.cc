@@ -70,8 +70,3 @@ int main()
 
     return 0;
 }
-Output.txt : Execution result
-                 Client : I can work just fine with the Target objects : Target : The default target's behavior.
-
-                                                                                  Client : The Adaptee class has a weird interface.See,
-    I don't understand it: Adaptee :.eetpadA eht
