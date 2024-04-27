@@ -58,3 +58,4 @@
   compiler: /usr/bin/g++
   ```
 * `main` -> right-click -> `Open in Integrated Terminal`
+* `$ ./main`
