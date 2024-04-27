@@ -1,3 +1,5 @@
+#include <iostream>
+
 using std::string;
 
 // Prototype Design Pattern
@@ -93,7 +95,7 @@ public:
 class PrototypeFactory
 {
 private:
-    std::unordered_map<Type, Prototype *, std::hash<int>> prototypes_;
+    std::unordered_map<Type, Prototype *, std::hash<int> > prototypes_;
 
 public:
     PrototypeFactory()
