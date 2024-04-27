@@ -83,5 +83,10 @@ Myclass object;                   //object has automatic storage duration (usual
 ***
 
 ```c++
-virtual ~Target() = default;
+class Target
+{
+public:
+  virtual ~Target() = default;
+  ...
+};
 ```
