@@ -78,8 +78,12 @@ Myclass object;                   //object has automatic storage duration (usual
 ***
 
 ## Multiple Inheritance
-* `class A : public B, public C`
-
+```c++
+class A : public B, public C`
+{
+  ...
+};
+```
 ***
 
 ```c++
