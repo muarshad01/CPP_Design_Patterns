@@ -1,8 +1,8 @@
-#include <iostream>
-
 /**
  * The Target defines the domain-specific interface used by the client code.
  */
+#include <iostream>
+
 class Target
 {
 public:
