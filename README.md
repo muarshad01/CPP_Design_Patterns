@@ -67,6 +67,8 @@
 
 ***
 
+## C++ Example Code
+
 ### Object Creation
 ```c++
 Myclass *object = new Myclass();  //object has dynamic   storage duration (usually is on the heap)
@@ -77,7 +79,7 @@ Myclass object;                   //object has automatic storage duration (usual
 
 ***
 
-## Multiple Inheritance
+### Multiple Inheritance
 ```c++
 class A : public B, public C`
 {
@@ -87,7 +89,7 @@ class A : public B, public C`
 
 ***
 
-## Virtual Destructor
+### Virtual Destructor
 ```c++
 #include <iostream>
  
@@ -131,7 +133,7 @@ public:
 
 ***
 
-## Pure Virtual Function
+### Pure Virtual Function
 ```c++
 // C++ Program to illustrate the abstract class and virtual functions
 #include <iostream>
