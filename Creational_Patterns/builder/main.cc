@@ -6,7 +6,7 @@
  * unrelated products. In other words, results of various builders may not
  * always follow the same interface.
  */
-
+#include <iostream>
 class Product1
 {
 public:
