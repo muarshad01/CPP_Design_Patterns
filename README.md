@@ -130,14 +130,11 @@ int main()
   return 0;
 }
 ```
-
-```c++
-class Target
-{
-public:
-  virtual ~Target() = default;
-  ...
-};
+```
+Constructing base
+Constructing derived
+Destructing derived
+Destructing base
 ```
 * Making base class destructor virtual guarantees that the object of derived class is destructed properly, i.e., both base class and derived class destructors are called.
 
