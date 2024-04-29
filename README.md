@@ -56,8 +56,9 @@
   
 ***
 
-## Run the Code
-* `main.cpp` -> Terminal -> `Run Build Task` (shift + command + b)
+## Run the Code through VSCode Editor
+
+* `main.cpp` -> Terminal -> `Run Build Task` (shift + command + b) then select:
   ```
   C/C++: g++ build active file
   compiler: /usr/bin/g++
@@ -67,7 +68,7 @@
 
 ***
 
-## Compile & Run through CommandLine
+## Run the code through Command Line
 
 ```
 $ g++ --std=c++17 main.cc
