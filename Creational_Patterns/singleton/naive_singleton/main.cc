@@ -3,22 +3,19 @@
  * alternative to constructor and lets clients access the same instance of this
  * class over and over.
  */
+#include <iostream>
 class Singleton
 {
-
     /**
      * The Singleton's constructor should always be private to prevent direct
      * construction calls with the `new` operator.
      */
 
 protected:
-    Singleton(const std::string value) : value_(value)
-    {
-    }
-
+    std::string value_;
     static Singleton *singleton_;
 
-    std::string value_;
+    Singleton(const std::string value) : value_(value){}
 
 public:
     /**
