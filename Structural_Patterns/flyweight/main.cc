@@ -5,6 +5,7 @@
  * common parts of state between multiple objects, instead of keeping all of the
  * data in each object.
  */
+#include <iostream>
 
 struct SharedState
 {
