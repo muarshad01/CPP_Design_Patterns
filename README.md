@@ -77,7 +77,7 @@ $ ./a.out
 ```
 ***
 
-## C++ Example Code
+## C++ Example Code Explanation
 
 ### Object Creation
 ```c++
