@@ -35,7 +35,7 @@
 * [Mediator](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/mediator)
 * [Observer](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/observer)
 * [Strategy](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/strategy)
-* [State](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/state)
+* [State](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/state) -- April 28, 2024
 * [Template](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/template_method)
 * [Visitor](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/visitor)
 
