@@ -67,6 +67,14 @@
 
 ***
 
+## Compile & Run through CommandLine
+
+```
+$ g++ --std=c++17 main.cc
+$ ./a.out
+```
+***
+
 ## C++ Example Code
 
 ### Object Creation
