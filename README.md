@@ -28,7 +28,7 @@
 
 ## Behavioral Design Patterns (C2-I-M2-O-S2-TV)
 
-* [Chain of Responsibility](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/chain_of_responsibility)
+* [Chain of Responsibility](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/chain_of_responsibility) -- April 28, 2024
 * [Command](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/command)
 * [Iterator](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/iterator) -- April 28, 2024
 * [Memento](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/memento)
