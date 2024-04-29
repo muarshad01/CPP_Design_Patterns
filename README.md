@@ -30,7 +30,7 @@
 
 * [Chain of Responsibility](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/chain_of_responsibility)
 * [Command](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/command)
-* [Iterator](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/iterator)
+* [Iterator](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/iterator) -- April 28, 2024
 * [Memento](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/memento)
 * [Mediator](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/mediator)
 * [Observer](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Behavioral_Patterns/observer)
