@@ -56,7 +56,8 @@
   
 ***
 
-## Run the Code through VSCode Editor
+## Run the Code
+#### Run the Code through VSCode Editor
 
 * `main.cpp` -> Terminal -> `Run Build Task` (shift + command + b) then select:
   ```
@@ -68,7 +69,7 @@
 
 ***
 
-## Run the code through Command Line
+#### Run the code through Command Line
 
 ```
 $ g++ --std=c++17 main.cc
