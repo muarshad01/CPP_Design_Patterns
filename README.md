@@ -10,7 +10,7 @@
 * [Builder](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Creational_Patterns/builder) -- April 28, 2024
 * [Factory Method](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Creational_Patterns/factory_method)
 * [Prototype](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Creational_Patterns/prototype) -- April 27, 2024
-* [Singleton](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Creational_Patterns/singleton)
+* [Singleton](https://github.com/muarshad01/CPP_Design_Patterns/tree/main/Creational_Patterns/singleton) -- April 28, 2024
 
 ***
 
